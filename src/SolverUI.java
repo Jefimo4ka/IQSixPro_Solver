@@ -23,8 +23,6 @@ public class SolverUI extends JFrame {
         return title;
     };
 
-   
-
     JPanel figuresList() {
         JPanel figuresList = new JPanel();
         figuresList.setBackground(Color.darkGray);
@@ -33,7 +31,7 @@ public class SolverUI extends JFrame {
         return figuresList;
     };
 
-    JButton submit(){
+    JButton submit() {
         JButton submit = new JButton("SUBMIT");
         submit.setBackground(Color.red);
 
@@ -54,7 +52,7 @@ public class SolverUI extends JFrame {
         panel.add(new MapGeneration(), BorderLayout.CENTER);
         panel.add(figuresList(), BorderLayout.WEST);
         panel.add(submit(), BorderLayout.SOUTH);
-        add(panel);
+        getContentPane().add(panel);
         setVisible(true);
     };
 };
